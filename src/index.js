@@ -9,6 +9,7 @@ const client = new Client({ intents: [GatewayIntentBits.Guilds] });
 
 //Client Collections
 client.commands = new Collection();
+client.cooldowns = new Collection();
 
 //Slash Command Handling
 const foldersPath = path.join(__dirname, 'commands');
